@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/generoFragment">
+
+    <fragment
+        android:id="@+id/generoFragment"
+        android:name="com.rsamqui.transactions.fragments.GeneroFragment"
+        android:label="fragment_genero"
+        tools:layout="@layout/fragment_genero">
+        <action
+            android:id="@+id/action_generoFragment_to_agregarGeneroFragment"
+            app:destination="@id/agregarGeneroFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/agregarGeneroFragment"
+        android:name="com.rsamqui.transactions.fragments.AgregarGeneroFragment"
+        android:label="fragment_agregar_genero"
+        tools:layout="@layout/fragment_agregar_genero" >
+        <action
+            android:id="@+id/action_agregarGeneroFragment_to_generoFragment"
+            app:destination="@id/generoFragment" />
+    </fragment>
+
+
+</navigation>
