@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.rsamqui.transactions.R
-import com.rsamqui.transactions.entities.GeneroEntity
+import com.rsamqui.transactions.entities.Genero
 
-class GeneroAdapter(val compra:List<GeneroEntity>):RecyclerView.Adapter<GeneroAdapter.GeneroHolder>()  {
+class GeneroAdapter(val compra:List<Genero>):RecyclerView.Adapter<GeneroAdapter.GeneroHolder>()  {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int

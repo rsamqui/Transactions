@@ -5,13 +5,13 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.rsamqui.transactions.dao.GeneroDao
-import com.rsamqui.transactions.entities.GeneroEntity
+import com.rsamqui.transactions.entities.Genero
 
 interface MainDataBaseProvider{
     fun generoDao() : GeneroDao
 }
 
-@Database (entities = [GeneroEntity::class],
+@Database (entities = [Genero::class],
     version = 1
 )
 

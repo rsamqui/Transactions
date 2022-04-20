@@ -10,7 +10,7 @@ import com.rsamqui.transactions.R
 import com.rsamqui.transactions.dao.GeneroDao
 import com.rsamqui.transactions.database.DBGenero
 import com.rsamqui.transactions.databinding.FragmentAgregarGeneroBinding
-import com.rsamqui.transactions.entities.GeneroEntity
+import com.rsamqui.transactions.entities.Genero
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -37,7 +37,7 @@ class AgregarGeneroFragment : Fragment() {
         with(binding){
             btnAgregar.setOnClickListener {
 
-                val id = GeneroEntity(0, generoNombre.text.toString(), true)
+                val id = Genero(0, generoNombre.text.toString(), true)
 
                 CoroutineScope(Dispatchers.Main).launch {
                     dao.insertGenero(id)
